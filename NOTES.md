@@ -42,3 +42,19 @@ http://localhost:8001/
 + Optimal Resourced Utilization
 + Improved Scalability
 + Enhanced Reliability
+
+## Task Routing
+
+
++ Efficient and lntelligent distribution of tasks
++ Process of determining the destination of tasks
++ Allows you to control how tasks are dispatched to worker nodes
++ Improved Scalability
++ Load Balancing
++ Granular Control
+
+### Advanced Routing Techniques:
+
++ Dynamic Routing based on Runtime Conditions
++ Routing based on task Arguments or context
++ Using External routing Strategies or Plugins
