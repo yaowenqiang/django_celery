@@ -58,3 +58,17 @@ http://localhost:8001/
 + Dynamic Routing based on Runtime Conditions
 + Routing based on task Arguments or context
 + Using External routing Strategies or Plugins
+
+## Prioritize Tasks
+
++ Ensure critial tasks are executed first
++ Optimize resource utilization
++ Meet SLAs and deadlines
++ handle high-priority or time-sensitive requests efficiently
+
+### Setting Task Priority:
+
++ 0 and 9 (0 being the lowest priority and 9 being the highest)
++ Default specified in the task decorator or configuration
+
+
