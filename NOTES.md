@@ -71,4 +71,22 @@ http://localhost:8001/
 + 0 and 9 (0 being the lowest priority and 9 being the highest)
 + Default specified in the task decorator or configuration
 
+### Configuring Worker Queues
+
++ Define multiple queues representing different priorities
++ Associate each queue with a specific priority level
++ Celery worker consumes tasks from queues based on their priority
+
+
+## Task Grouping
+
+```python
+
+from celery import group
+
+from newtasks import tp1, tp2,tp3, tp4
+tasks_group = group(tp1.s(), tp2.s(), tp3.s(), tp4.s())
+tasks_group.apply_async()
+```
+
 
