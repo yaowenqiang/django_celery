@@ -89,4 +89,13 @@ tasks_group = group(tp1.s(), tp2.s(), tp3.s(), tp4.s())
 tasks_group.apply_async()
 ```
 
+## Task Chaining
 
+
+
+```python
+from celery import chain
+from newtasks import tp1, tp2,tp3, tp4
+tasks_chain = chain(tp1.s(), tp2.s(), tp3.s(), tp4.s())
+tasks_chain.apply_async()
+```
