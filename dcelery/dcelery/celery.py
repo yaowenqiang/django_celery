@@ -19,5 +19,8 @@ app.conf.broker_transport_options = {
     'sep':':',
     'queue_order_strategy':'priority',
 }
+
+app.conf.task_default_rate_limit = '5/m'
+
 app.autodiscover_tasks()
 
