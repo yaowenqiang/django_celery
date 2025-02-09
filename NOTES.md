@@ -102,3 +102,18 @@ tasks_chain.apply_async()
 
 ## Task Rate limites
 
+
+> pip install pika
+>
+> docker stop $(docker ps -aq) && docker rm $(docker ps -aq) && docker rmi $(docker images -q) && docker volume prune -f && docker network prune -f
+
+
+```python
+from dcelery.celery import t1, t2,t3
+
+t1.apply_async(priority=5)
+t1.apply_async(priority=6)
+t1.apply_async(priority=7)
+t1.apply_async(priority=9)
+
+```
