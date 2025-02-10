@@ -117,3 +117,26 @@ t1.apply_async(priority=7)
 t1.apply_async(priority=9)
 
 ```
+
+> celery inspect active
+> celery inspect active_queues
+
+## Passing arguments and returning results from Celery tasks
+
+
+```python
+    from dcelery.tasks import t1
+    result = t1.apply_async(args=[1,2,3], kwargs={'a':1, 'b':2})
+    print(result.get())
+```
+
+### AsyncResult
+
++ isComplete(): Checks whether the task associated with the AsyncResult object has completed
++ isSuccessful(): Checks whether the task completed successfully
++ get(): Blocks the current thread until the task compeletes
++ getResult(): Returns if task has completed succeffully
++ getException(): Returns the exception or error
++ ready(): 
+
+
