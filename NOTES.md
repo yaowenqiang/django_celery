@@ -153,4 +153,12 @@ t1.apply_async(priority=9)
 
 ## Task Retry Policies
 
+## Celery Flower
+
+### Purpose of Celery Flower
+
++ Monitoring
++ Management
++ Visualization
+
 

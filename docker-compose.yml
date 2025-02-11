@@ -1,4 +1,13 @@
 services:
+  flower:
+    image: mher/flower
+    container_name: flower
+    ports:
+      - 5555:5555
+    environment:
+      - CELERY_BROKER_URL=amqp://guest:guest@rabbitmq:5672/
+    depends_on:
+      - rabbitmq
   redis:
     container_name: redis
     image: redis:7.0.11-alpine
