@@ -139,4 +139,18 @@ t1.apply_async(priority=9)
 + getException(): Returns the exception or error
 + ready(): 
 
+## Executing tasks synchronously and asynchronously
+
++ Synchronous execution: Tasks are executed immediately in the same thread
++ Asynchronous execution: Tasks are executed in a separate thread or process
+
+## Task Retry Mechanism
+
++ Retry failed tasks automatically
++ Retry failed tasks after a specified delay
++ Retry failed tasks a specified number of times
++ Retry failed tasks based on specific conditions
+
+## Task Retry Policies
+
 

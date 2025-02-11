@@ -49,5 +49,16 @@ def t3():
     time.sleep(1)
     return
 
+def execute_sync():
+    result = t1.apply_async(args=[1])
+    task_result = result.get()
+    print('Task is running synchronously')
+    print(task_result)
+
+def execute_async():
+    result = t1.apply_async(args=[1])
+    print('Task is running synchronously')
+    print(f'task ID:{result.task_id}')
+
 app.autodiscover_tasks()
 
