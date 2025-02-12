@@ -161,4 +161,11 @@ t1.apply_async(priority=9)
 + Management
 + Visualization
 
+## Common Types of Exceptions and Errors in Celery Tasks
+
+### Network Errors
+
++ Connection timeout
++ DNS resolution failure
++ Network connectivity issues
 
