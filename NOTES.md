@@ -169,3 +169,16 @@ t1.apply_async(priority=9)
 + DNS resolution failure
 + Network connectivity issues
 
+### Database Connection Issues
+
++ Database server unavailability
++ Authentication errors
++ Connection pool exhaustion
+
+
+### External Service Failures
+
+### Custom Application-Specific Errors
+
+
+
