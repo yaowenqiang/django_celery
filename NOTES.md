@@ -183,5 +183,16 @@ t1.apply_async(priority=9)
 ## Dead-letter Queues
 
 
+## Task Signals Graceful shutdown and Cleanup of Failed Tasks
+
+### Common events
+
++ task_prerun: Triggered before a task starts executing
++ task_postrun: Triggered rigit after a task finishes executing,regardless of success or failure
++ task_success: Triggered when a task completes successfully
++ task_failure: Triggered when a task fails or raises an exception
++ task_revoked: Triggered when a task is manually revoked
++ task_retry: Triggered when a task is retried
+
 
 
