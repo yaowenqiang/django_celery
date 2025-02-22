@@ -195,4 +195,8 @@ t1.apply_async(priority=9)
 + task_retry: Triggered when a task is retried
 
 
+## Error Tracking and Monitoring with Sentry
 
+> https://sentry.io/
+
+> pip install --upgrade 'sentry-sdk[django]'
