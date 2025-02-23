@@ -200,3 +200,37 @@ t1.apply_async(priority=9)
 > https://sentry.io/
 
 > pip install --upgrade 'sentry-sdk[django]'
+
+
+## Task Scheduling
+
++ Orchestrating the execution
++ Automate routine process
+
+### Type of Scheduling Machanisms
+
++ Time-based Scheduling
++ Event-based Scheduling
++ Dependency-based Scheduling
+
+
+### Benifits of Automated Task Scheduling
+
++ Increased Efficiency
++ Optimal Resource Utilization
++ Improved Schalability
++ Enhanced Reliability
+
+
+### Understanding Periodic Tasks
+
++ Time based recurring tasks
+
+
+### Configuring Celery for Periodic Tasks
+
++ Celery beat scheduler configuration
++ Deining Periodic Tasks
++ Customizing Periodic Task
+
+
