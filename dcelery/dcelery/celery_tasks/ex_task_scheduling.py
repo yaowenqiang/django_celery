@@ -17,6 +17,14 @@ app.conf.beat_schedule = {
         'task': dcelery.celery_tasks.ex_task_scheduling.task2,
         'schedule': timedelta(seconds=10),
     },
+    'task3': {
+        'task': dcelery.celery_tasks.ex_task_scheduling.task2,
+        'schedule': timedelta(seconds=10),
+        "kwargs":{"foo":"bar"},
+        "args":(1,2,3),
+        "options": {"queue": "tasks"},
+        "priority": 10,
+    },
 }
 
 @app.task
