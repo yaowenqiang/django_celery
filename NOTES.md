@@ -234,3 +234,26 @@ t1.apply_async(priority=9)
 + Customizing Periodic Task
 
 
+### Build Crontab Schedules
+
+```python
+from celery.schedules import crontab
+
+app.conf.beat_schedule = {
+    'task1': {
+        'task': 'tasks.task1',
+        'schedule': crontab(hour=7, minute=30, day_of_week=1),
+    },
+    'task2': {
+        'task': 'tasks.task2',
+        'schedule': crontab(hour=8, minute=0),
+    },
+}
+```
+
+### Celery Beat Configuration
+
++ CELERY_BEAT_SCHEDULE
++ CELERY_BEAT_SCHEDULE_FILENAME
++ CELERY_BEAT_SCHEDULE_MAX_ACTIVE
+```
