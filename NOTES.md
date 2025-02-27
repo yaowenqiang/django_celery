@@ -257,3 +257,9 @@ app.conf.beat_schedule = {
 + CELERY_BEAT_SCHEDULE_FILENAME
 + CELERY_BEAT_SCHEDULE_MAX_ACTIVE
 ```
+
+### Django Celery beat
+
+> pip install django-celery-beat
+
+
