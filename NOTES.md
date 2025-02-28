@@ -262,4 +262,23 @@ app.conf.beat_schedule = {
 
 > pip install django-celery-beat
 
+## Monitoring Service Status Including Custom Event Tracking and Alerting
 
+
+```
+# docker-compose.yml
+
+env_file:
+    - ./.env
+```
+
+
+```python
+from sentry import capture_exception
+
+try:
+    # Code that may raise an exception
+except Exception as e:
+    capture_exception(e)
+
+```
